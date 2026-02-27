@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #a3d5ff;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+header.encabezado-1 {
+  background-color: #66b3ff;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header .titulo-1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Arial, sans-serif;
+}
+
+.menu-1.navbar-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-1 ul.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-1 ul.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 0;
+  transition: background 0.3s ease;
+}
+
+.menu-1 ul.nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bloque {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bloque h3 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+
+button[type="submit"] {
+  background-color: #0073e6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+
+.seccion-oculta {
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.pie-9 {
+  background-color: #3399ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}

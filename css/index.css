@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #a3d5ff;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+header.encabezado-1 {
+  background-color: #66b3ff;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header .titulo-1 {
+  font-size: 40px;
+   font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Arial, sans-serif;
+}
+
+
+.menu-1 {
+  margin-top: 10px;
+}
+
+.menu-1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-1 ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.menu-1 ul li a:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+
+
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.mision-2, .objetivos-2 {
+  background: rgb(252, 212, 212);
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.mision-2 h2, .objetivos-2 h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.mision-2 p, .objetivos-2 p, .objetivos-2 ul {
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto 15px auto;
+}
+
+.objetivos-2 ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .mision-2 h2, .objetivos-2 h2 {
+    font-size: 28px;
+  }
+
+  .mision-2 p, .objetivos-2 p, .objetivos-2 ul {
+    font-size: 16px;
+  }
+
+  .objetivos-2 ul {
+    padding-left: 15px;
+  }
+}
+
+
+section.container-section {
+  padding: 50px 20px;
+}
+
+.container-section h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #0073e6;
+  font-size: 30px;
+}
+
+
+.torneos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.torneo-3 {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 280px;
+}
+
+.torneo-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+
+@media (max-width: 992px) {
+  .torneo-3 {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .torneo-3 {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+.seccion-reglamento-4 {
+  background-color: #ff9999; 
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: left;
+}
+.seccion-reglamento-4 .titulo-seccion-4 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.lista-reglamento-4 {
+  padding-left: 20px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+.tabla-ranking-5 {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.tabla-ranking-5 th, .tabla-ranking-5 td {
+  text-align: center;
+  padding: 12px;
+}
+
+
+.testimonio-6 {
+  background-color: #e6f2ff;
+  border-left: 5px solid #3399ff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+
+.gal-img {
+  margin-bottom: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gal-img img:hover {
+  transform: scale(1.05);
+}
+
+.gal-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+
+.seccion-login-8 {
+  max-width: 420px;
+  margin: 0 auto 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.seccion-login-8 .form-control {
+  margin-bottom: 15px;
+}
+
+
+.pie-9 {
+  background-color: #3399ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}
+
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #portada h2 {
+    font-size: 28px;
+  }
+
+  #portada p.lead {
+    font-size: 16px;
+  }
+
+  .gal-img img {
+    height: 180px;
+  }
+}

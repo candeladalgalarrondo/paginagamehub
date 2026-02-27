@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - GameHub Solidario</title>
+
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="encabezado-1">
+  <div class="contenedor-1">
+    <h1 class="titulo-1">GameHub Solidario</h1>
+
+    <nav class="menu-1">
+      <ul>
+        <li><a href="index.html#portada">Inicio</a></li>
+        <li><a href="index.html#torneos">Torneos</a></li>
+        <li><a href="index.html#ranking">Ranking</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+        <li><a href="quierocolaborar.html">Colaborar</a></li>
+        <li><a href="index.html#login">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="admin-saludo container-section">
+    <h2 id="saludo"></h2>
+  </section>
+
+  <section class="admin-form-section container-section">
+    <h3> Crear Torneo/Campaña</h3>
+    <form id="adminForm" class="admin-form">
+      <div class="form-row">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="juego" placeholder="Juego" required>
+      </div>
+      <div class="form-row">
+        <input type="text" id="plataforma" placeholder="Plataforma" required>
+        <input type="date" id="fecha" required>
+      </div>
+      <div class="form-row">
+        <input type="number" id="cupos" placeholder="Cupos" required>
+        <input type="text" id="objetivo" placeholder="Objetivo solidario" required>
+      </div>
+      <div class="form-row">
+        <input type="text" id="reglas" placeholder="Reglas">
+        <input type="text" id="premios" placeholder="Premios simbólicos">
+      </div>
+      <div class="form-row">
+        <input type="url" id="pdf" placeholder="Enlace a reglamento PDF">
+        <input type="url" id="stream" placeholder="Link al stream">
+      </div>
+      <button type="submit">Guardar</button>
+    </form>
+  </section>
+
+  <section class="admin-listado container-section">
+    <h3>Torneos creados</h3>
+    <div class="table-wrapper">
+      <table id="tablaTorneos" class="admin-table">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Juego</th>
+            <th>Plataforma</th>
+            <th>Fecha</th>
+            <th>Cupos</th>
+            <th>Objetivo</th>
+            <th>Reglas</th>
+            <th>Premios</th>
+            <th>PDF</th>
+            <th>Stream</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+<tr>
+  <td data-label="Título">Campeonato de LoL</td>
+  <td data-label="Juego">League of Legends</td>
+  <td data-label="Plataforma">PC</td>
+  <td data-label="Fecha">20/11/2025</td>
+  <td data-label="Cupos">16</td>
+  <td data-label="Objetivo">Recaudar útiles escolares para la ONG Puertas Abiertas</td>
+  <td data-label="Reglas">Reglas básicas del torneo</td>
+  <td data-label="Premios">Medallas simbólicas</td>
+  <td data-label="PDF"><a href="multimedia/reglamento.pdf" target="_blank">PDF</a></td>
+  <td data-label="Stream"><a href="https://kick.com/boffegp" target="_blank">Stream</a></td>
+  <td data-label="Acciones">
+    <button type="button" onclick="editRow(this)">Editar</button>
+    <button type="button" onclick="deleteRow(this)">Eliminar</button>
+  </td>
+</tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="admin-optional container-section">
+    <h3>Inscriptos y Sponsors</h3>
+    <div class="admin-flex">
+      <div class="admin-flex-item">
+        <h4>Jugadores Inscritos</h4>
+        <ul id="listaJugadores">
+          <li>LucasGamer</li>
+          <li>EmmaLOL</li>
+          <li>FedeFort</li>
+        </ul>
+      </div>
+
+      <div class="admin-flex-item">
+        <h4>Sponsors</h4>
+        <ul id="listaSponsors">
+          <li>Razer</li>
+          <li>HyperX</li>
+          <li>NVIDIA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-section">
+    <a href="index.html" class="btn-primary">Volver al inicio</a>
+  </div>
+</main>
+
+<footer class="pie-9">
+  © Candela Dalgalarrondo 2025
+</footer>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
